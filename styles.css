@@ -79,6 +79,10 @@ color: var(--main-color);
     left: 0%;
 }
 
+.home-content{
+    position: absolute;
+    right: 25%;
+}
 .home-content h3{
     font-size: 3.2rem;
     font-weight: 700;
@@ -87,7 +91,7 @@ color: var(--main-color);
 .home-content h2{
     color: transparent;
     -webkit-text-stroke: 2px white;
-    background: url(/assets/calculator.png);
+    background: url(/assets/motor\ car.png);
     -webkit-background-clip: text;
     background-position: 0 0;
     animation: back 30s linear infinite;
@@ -100,9 +104,15 @@ color: var(--main-color);
     }
 }
 
+.home-img{
+    display: flex;
+    align-items: right;
+    justify-content: right;
+}
 
 .home-img img{
-    width: 35vw;
+    border-radius: 25%;
+    width: 25vw;
     animation: floatImage 4s ease-in-out infinite;
 }
 
@@ -141,7 +151,7 @@ span{
     background: transparent;
     /* border: 2rem solid var(--main-color); */
     border-radius: 50%;
-    font-size: 2rem;
+    font-size: 4rem;
     color: var(--main-color);
     margin: 3rem 1.5rem 3rem 0;
     transition: .5s ease;
@@ -185,8 +195,11 @@ span{
     display: flex;
     align-items: center;
     justify-content: center;
-    top: -200px;
+    font-size: 1.6rem;
+    /* margin: 2rem 0 3rem; */
+    margin-right: 2rem;
 }
+
 .about-img img{
     width: 35vw;
     height: fit-content;
@@ -195,7 +208,6 @@ span{
 .heading{
     text-align: center;
     font-size: 4.5rem;
-
 }
 
 .about-content h2{
@@ -337,6 +349,10 @@ span{
 /* end of work section */
 
 /* Contact section */
+
+.problem{
+    font-size: 2.6rem;
+}
 .contact h2{
     margin-bottom: 3rem;
 }
@@ -422,6 +438,10 @@ span{
 }
 
 @media (max-width: 1024px) {
+
+    .header #home #about #services #work #contact .footer{
+        width: fit-content;
+    }
     .header{
         padding: 2rem 3%;
     }
@@ -448,6 +468,10 @@ span{
 }
 
 @media (max-width:768px) {
+
+    .header #home #about #services #work #contact .footer{
+        width: fit-content;
+    }
     #menu-icon{
         display: block;
     }
@@ -507,6 +531,10 @@ span{
 }
 
 @media (max-width:465px) {
+
+    .header #home #about #services #work #contact .footer{
+        width: fit-content;
+    }
     .work-container{
         grid-template-columns: 1fr;
     }
@@ -515,6 +543,9 @@ span{
         width: 90vw;
     }
 
+    #menu-icon{
+        display: block;
+    }
     html{
         font-size: 50%;
     }

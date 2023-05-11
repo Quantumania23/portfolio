@@ -40,49 +40,30 @@ header.classList.toggle('sticky', window.scrollY > 100);
 
 ScrollReveal({
     reset:true,
-    distance:'80px',
+    distance:'100px',
     duration: 2000,
     delay: 200
 });
 
-ScrollReveal().reveal('.home-content, .heading', { origin: 'top'});
+ScrollReveal().reveal('.home-content, .heading, .social-media', { origin: 'top'});
 ScrollReveal().reveal('.services-container, .work-box, .contact form', { origin: 'bottom'});
 ScrollReveal().reveal('.home-content h1, .about-img', { origin: 'left'});
-ScrollReveal().reveal('.home-content p, .about-content', { origin: 'right'});
+ScrollReveal().reveal('.home-content p, .about-content, .problem', { origin: 'right'});
+
 
 // The typed js function
-const typed = new Typed('.attributes', {
-    strings: ['Acurracy & attention to detail','Problem solver','Videographer', 'Workaholic','Globetrotter'  ],
+const typed = new Typed('.multiple-text',{
+    strings: ['Frontend Developer', 'Graphic designer','Videographer'],
     typeSpeed: 100,
     backSpeed: 100,
     backDelay: 1000,
     loop:true
 })
 
-let n = 5;
-let string = "";
-// Upside pyramid
-for (let i = 1; i <= n; i++) {
-  // printing spaces
-  for (let j = n; j > i; j--) {
-    string += " ";
-  }
-  // printing star
-  for (let k = 0; k < i * 2 - 1; k++) {
-    string += "*";
-  }
-  string += "\n";
-}
-// downside pyramid
-for (let i = 1; i <= n - 1; i++) {
-  // printing spaces
-  for (let j = 0; j < i; j++) {
-    string += "**";
-  }
-  // printing star
-  for (let k = (n - i) * 2 - 1; k > 0; k--) {
-    string += "*";
-  }
-  string += "\n";
-}
-console.log(string);
+const type = new Typed('.attributes',{
+    strings: ['Problem solver', 'Workaholic','Globetrotter', 'Mathematically articulate', 'Responsible'],
+    typeSpeed: 100,
+    backSpeed: 100,
+    backDelay: 1000,
+    loop:true
+})
