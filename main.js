@@ -6,6 +6,9 @@ menuIcon.onclick = () => {
     menuIcon.classList.toggle('bx-x')
     navbar.classList.toggle('active')
 
+    menuIcon.classList.remove('bx-x')
+    navbar.classList.remove('active')
+
 }
 let sections = document.querySelectorAll('section')
 let navLinks = document.querySelectorAll('header nav a')
@@ -26,8 +29,7 @@ window.onscroll = () => {
     });
 
     
-    menuIcon.classList.remove('bx-x')
-    navbar.classList.remove('active')
+    
 }
 
 // navbar attributes
