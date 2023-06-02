@@ -4,10 +4,10 @@ let navbar = document.querySelector('.navbar');
 
 menuIcon.onclick = () => {
     menuIcon.classList.toggle('bx-x')
-    navbar.classList.toggle('active')
+    navbar.classList.toggle('.navbar')
 
     menuIcon.classList.remove('bx-x')
-    navbar.classList.remove('active')
+    navbar.classList.remove('.navbar')
 
 }
 let sections = document.querySelectorAll('section')
@@ -55,7 +55,7 @@ ScrollReveal().reveal('.home-content p, .about-content, .problem', { origin: 'ri
 
 // The typed js function
 const typed = new Typed('.multiple-text',{
-    strings: ['Frontend Developer', 'Graphic designer','Videographer'],
+    strings: ['Frontend Developer', 'Graphic designer','Videographer', 'It consultant'],
     typeSpeed: 100,
     backSpeed: 100,
     backDelay: 1000,

@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mike's Portfolio</title>
+    <link rel="icon" href="assets/1668150840073.jpg">
     <link rel="stylesheet" href="./styles.css">
 <!-- box icons link -->
     <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
@@ -159,7 +160,7 @@
                 <div class="work-layer">
                     <h4>Website</h4>
                     <p></p>
-                    <a href="#"><i class="bx bx-link-external"></i></a>
+                    <a href="https://real-estate-cyan.vercel.app/" target="_blank"><i class="bx bx-link-external"></i></a>
                 </div>
             </div>
         </div>
@@ -185,19 +186,24 @@
         <a href="https://www.linkedin.com/in/mike-mutuku-oa23a1bb" class="bx bxl-linkedin" target="_blank"></a>
     </div>
 
-    <form action="#">
+    <form action="https://formsubmit.co/mikepeace981@gmail.com" method="POST">
         <div class="input-box">
-            <input type="text" placeholder="Full Name...">
-            <input type="email" placeholder="Email Address">
+            <input type="text" placeholder="Full Name..." required>
+            <input type="email" name="email" placeholder="Email Address" required>
+            <input type="hidden" name="_subject" value="new">
         </div>
 
         <div class="input-box">
-            <input type="text" placeholder="Mobile Number...">
-            <input type="email" placeholder="Email Subject">
+            <input type="text" placeholder="Mobile Number..." required>
+            <input type="text" placeholder="Email Subject" required>
         </div>
         <br>
         <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
         <input type="submit" value="Hit me up" class="btn">
+
+        <!-- connecting the clients email to mine -->
+        <input type="hidden" name="_next" value="https://portfolio-eight-cyan-12.vercel.app//thankyou.html">
+
     </form>
 
 </section>
