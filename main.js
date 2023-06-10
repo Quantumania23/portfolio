@@ -43,7 +43,7 @@ header.classList.toggle('sticky', window.scrollY > 100);
 ScrollReveal({
     reset:true,
     distance:'100px',
-    duration: 2000,
+    duration: 2200,
     delay: 200
 });
 
@@ -56,16 +56,24 @@ ScrollReveal().reveal('.home-content p, .about-content, .problem', { origin: 'ri
 // The typed js function
 const typed = new Typed('.multiple-text',{
     strings: ['Frontend Developer', 'Graphic designer','Videographer', 'It consultant'],
-    typeSpeed: 100,
-    backSpeed: 100,
-    backDelay: 1000,
+    typeSpeed: 150,
+    backSpeed: 150,
+    backDelay: 1300,
     loop:true
 })
 
 const type = new Typed('.attributes',{
     strings: ['Problem solver', 'Workaholic','Globetrotter', 'Mathematically articulate', 'Responsible'],
-    typeSpeed: 100,
-    backSpeed: 100,
-    backDelay: 1000,
+    typeSpeed: 150,
+    backSpeed: 150,
+    backDelay: 1300,
     loop:true
+})
+
+const types = new Typed('.stacks', {
+    strings: ['React','Javascript', 'Css', ' Node js', 'Html', 'MongoDb'],
+    typeSpeed: 150,
+    backSpeed: 150,
+    backDelay: 1300,
+    loop: true
 })
