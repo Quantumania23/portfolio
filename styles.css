@@ -14,12 +14,12 @@
     --second-bg-color: #2a2e34;
     --text-color: #fff ;
     --main-color: blueviolet;
-    --font-size: 24px;
+    --font-size: 28px;
     --header-font-size: 28px;
 }
 
 html{
-    font-size: 60.5%;
+    font-size: 75.5%;
     overflow-x: hidden;
 }
 body{
@@ -420,6 +420,10 @@ span{
 .contact form .btn{
     margin-bottom: 2rem;
     cursor: pointer;
+}
+
+.input-box{
+    width: 220%;
 }
 /* end of contact form */
 
